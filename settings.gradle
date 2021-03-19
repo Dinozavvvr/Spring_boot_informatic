@@ -1,0 +1,3 @@
+rootProject.name = 'Gradle_example'
+include 'module_1'
+

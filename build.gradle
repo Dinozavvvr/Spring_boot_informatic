@@ -1,0 +1,26 @@
+apply plugin: JavaPlugin
+
+group 'ru.itis'
+version '0.0.1'
+project.buildDir = "build2"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.4.4'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.3'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.3'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.4.3'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+    annotationProcessor 'org.projectlombok:lombok:1.18.18';
+    // https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter
+    implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.4.3'
+
+}
